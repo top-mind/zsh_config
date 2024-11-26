@@ -73,9 +73,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias copy='xclip -r -selection clipboard'
 alias copypath='pwd | copy'
 alias tf='fzf-tmux'
-alias v='$EDITOR $(fzf-tmux)'
+alias v='nvim "+Telescope fd"'
 alias vimux='tmux select-pane -T vimux'
-alias str='find . -type f -print0 | xargs -0 grep -s'
+alias vg='nvim "+Telescope live_grep"'
 2pdf () {
   local file_out
   local header

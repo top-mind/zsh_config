@@ -12,6 +12,6 @@ sudo tar -C /opt -xzf /tmp/nvim-linux64.tar.gz
 export PATH="$PATH:/opt/nvim-linux64/bin"
 cp -r . ~
 rm ~/README.md
-sudo passwd -s /bin/zsh $USERNAME
+sudo chsh -s /bin/zsh $USERNAME
 # reboot
 ```
